@@ -21,11 +21,11 @@ string username; // declaring a variable (1 of 3)
 Console.WriteLine("What is your name?"); // request for user input
 username = Console.ReadLine(); // assigning a value to a variable (2 of 3)
 Console.WriteLine("Hi " + username); // retrieving its current value (3 of 3)
-20   
-21   
-22   // another example of the three primary variable related activities (declaring, assigning, and retrieving)
-23   string favoriteColor;
-24   Console.WriteLine("What is your favorite color?");
+ 
+
+// another example of the three primary variable related activities (declaring, assigning, and retrieving)
+string favoriteColor;
+Console.WriteLine("What is your favorite color?");
 25   favoriteColor = Console.ReadLine();
 26   Console.WriteLine("Your favorite color is " + favoriteColor);
 27   
