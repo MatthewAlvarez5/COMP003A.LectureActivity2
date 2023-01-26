@@ -86,7 +86,7 @@ namespace COMP003A.LectureActivity2
    
             int anInteger = 2147483647;
    
-            /* declaring,using, and concatenating characters ans strings */
+            /* declaring, using, and concatenating characters ans strings */
             char aLetter = 'A'; // character values are enclosed in single quotes
             string message = "Hello World!"; // string values are enclosed in double quotes
    
