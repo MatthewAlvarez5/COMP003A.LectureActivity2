@@ -1,5 +1,5 @@
 ﻿/*
-    * Author: Jonathan Cruz
+    * Author: Matthew Alvarez
     * Course: COMP-003A
     * Purpose: Lecture activity for variables, type system, Math, and Console properties
     * Reference: The C# Player's Guide (4e) by RB Whitaker
@@ -61,104 +61,104 @@ string exampleVAriable;
 string exampleVARiable;
 
 Console.WriteLine("**************************************************");
-60   /*
-61                * types of variables and values matter in C#. they are not interchangeable.
-62                * there are eight integer types for storing integers of differing sizes and ranges: int, short, long, byte, sbyte, uint, ushort, and ulong.
-63                * the char type stores single characters.
-64                * the string type stores longer text.
-65                * there are three types for storing real numbers: float, double, and decimal.
-66                * the bool type stores truth values (true and false) used in logic.
-67                * these types are the building blocks of a much larger type system.
-68                * using var for a variable’s type tells the compiler to infer its type from the surrounding code, so you do not have to type it out. (But it still has a specific type.)
-69                * the System.Convert class is a useful class to convert from one type to another.
-70               */
-71   
-72   /* declaring and using variables with integer types */
-73   byte aSingleByte = 34;
-74   Console.WriteLine("aSingleByte: " + aSingleByte);
-75   aSingleByte = 17;
-76   Console.WriteLine("aSingleByte: " + aSingleByte);
-77   
-78   short aNumber = 5039;
-79   Console.WriteLine("aNumber: " + aNumber);
-80   aNumber = - 4354;
-81   Console.WriteLine("aNumber: " + aNumber);
-82   
-83   long aVeryBigNumber = 395904282569;
-84   Console.WriteLine("aVeryBigNumber: " + aVeryBigNumber);
-85   aVeryBigNumber = 13;
-86   Console.WriteLine("aVeryBigNumber: " + aVeryBigNumber);
-87   
-88   int anInteger = 2147483647;
-89   
-90   /* declaring,using, and concatenating characters ans strings */
-91   char aLetter = 'A'; // character values are enclosed in single quotes
-92   string message = "Hello World!"; // string values are enclosed in double quotes
-93   
-94   Console.WriteLine("Concatenation using + : " + aLetter + " " + message); // use the plus(+) sign in between characters/strings to concatenate
-95   Console.WriteLine($"Concatenation using string interpolation : {aLetter} {message}"); // use string interpolation with a dollar-sign ($) before the opening double -quote and enclosing variables with curly braces ({variableName})
-96
-97   /* floating-point types */
-98   double number1 = 3.5623;
-99   float number2 = 3.5623f;
-100   decimal number3 = 3.5623m;
-101   Console.WriteLine($"Value of number1: {number1}");
-102   Console.WriteLine($"Value of number2: {number2}");
-103   Console.WriteLine($"Value of number3: {number3}");
-104
-105   /* scientific notation */
-106   double avogadrosNumber = 6.022e23;
-107   Console.WriteLine($"Value of avogadrosNumber: {avogadrosNumber}");
-108
-109   /* bool type */
-110   bool itWorked = true;
-111   Console.WriteLine($"Value of itWorked: {itWorked}");
-112   itWorked = false;
-113   Console.WriteLine($"New value of itWorked: {itWorked}");
-114
-115   /* convert */
-116   string inputAgeString;
-117   int inputAge;
-118   int currentYear = 2023;
-119
-120   Console.WriteLine($"Enter age in {currentYear}: ");
-121   inputAgeString = Console.ReadLine();
-122   inputAge = Convert.ToInt32(inputAgeString);
-123   Console.WriteLine($"Your age is {inputAge}");
-124
-125   Console.WriteLine("**************************************************");
-126   /* 
-127                * math operations 
-128                * addition: +
-129                * subtraction: -
-130                * multiplication: *
-131                * division: /
-132                * modulo: % (remainder)
-133                */
-134   int addition = 2 + 3;
-135   int subtraction = 5 - 2;
-136   int multiplication = 22 * 2;
-137   int division = 21 / 7;
-138   int modulo = 77 % 5;
-139   Console.WriteLine($"Value of addition: {addition}");
-140   Console.WriteLine($"Value of subtraction: {subtraction}");
-141   Console.WriteLine($"Value of multiplication: {multiplication}");
-142   Console.WriteLine($"Value of division: {division}");
-143   Console.WriteLine($"Value of modulo: {modulo}");
-144
-145   /* 
-146                * arithmetic, compound expressions and order of operations 
-147                * Multiplication and division are done first, left to right
-148                * Addition and subtraction are done last, left to right
-149                * Reference: https://csharpplayersguide.com/articles/operators-table
-150                */
-151
-152   int arithmetic1; // declaring the variable arithmetic1.
-153   arithmetic1 = 9 - 2; // assigning a value to arithmetic1, using some math.
-154   Console.WriteLine($"Value of arithmetic1: {arithmetic1}");
-155   arithmetic1 = 3 + 3; // another assignment.
-156   Console.WriteLine($"New value of arithmetic1: {arithmetic1}");
-157   int arithmetic2 = 3 + 1; // declaring arithmetic2 and assigning a value to arithmetic2 all at once.
+/*
+                * types of variables and values matter in C#. they are not interchangeable.
+                * there are eight integer types for storing integers of differing sizes and ranges: int, short, long, byte, sbyte, uint, ushort, and ulong.
+                * the char type stores single characters.
+                * the string type stores longer text.
+                * there are three types for storing real numbers: float, double, and decimal.
+                * the bool type stores truth values (true and false) used in logic.
+                * these types are the building blocks of a much larger type system.
+                * using var for a variable’s type tells the compiler to infer its type from the surrounding code, so you do not have to type it out. (But it still has a specific type.)
+                * the System.Convert class is a useful class to convert from one type to another.
+               */
+   
+/* declaring and using variables with integer types */
+byte aSingleByte = 34;
+Console.WriteLine("aSingleByte: " + aSingleByte);
+aSingleByte = 17;
+Console.WriteLine("aSingleByte: " + aSingleByte);
+   
+short aNumber = 5039;
+Console.WriteLine("aNumber: " + aNumber);
+aNumber = - 4354;
+Console.WriteLine("aNumber: " + aNumber);
+   
+long aVeryBigNumber = 395904282569;
+Console.WriteLine("aVeryBigNumber: " + aVeryBigNumber);
+aVeryBigNumber = 13;
+Console.WriteLine("aVeryBigNumber: " + aVeryBigNumber);
+   
+int anInteger = 2147483647;
+   
+/* declaring,using, and concatenating characters ans strings */
+char aLetter = 'A'; // character values are enclosed in single quotes
+string message = "Hello World!"; // string values are enclosed in double quotes
+   
+Console.WriteLine("Concatenation using + : " + aLetter + " " + message); // use the plus(+) sign in between characters/strings to concatenate
+Console.WriteLine($"Concatenation using string interpolation : {aLetter} {message}"); // use string interpolation with a dollar-sign ($) before the opening double -quote and enclosing variables with curly braces ({variableName})
+
+/* floating-point types */
+double number1 = 3.5623;
+float number2 = 3.5623f;
+decimal number3 = 3.5623m;
+Console.WriteLine($"Value of number1: {number1}");
+Console.WriteLine($"Value of number2: {number2}");
+Console.WriteLine($"Value of number3: {number3}");
+
+/* scientific notation */
+double avogadrosNumber = 6.022e23;
+Console.WriteLine($"Value of avogadrosNumber: {avogadrosNumber}");
+
+/* bool type */
+bool itWorked = true;
+Console.WriteLine($"Value of itWorked: {itWorked}");
+itWorked = false;
+Console.WriteLine($"New value of itWorked: {itWorked}");
+
+/* convert */
+string inputAgeString;
+int inputAge;
+int currentYear = 2023;
+
+Console.WriteLine($"Enter age in {currentYear}: ");
+inputAgeString = Console.ReadLine();
+inputAge = Convert.ToInt32(inputAgeString);
+Console.WriteLine($"Your age is {inputAge}");
+
+Console.WriteLine("**************************************************");
+/* 
+                * math operations 
+                * addition: +
+                * subtraction: -
+                * multiplication: *
+                * division: /
+                * modulo: % (remainder)
+                */
+int addition = 2 + 3;
+int subtraction = 5 - 2;
+int multiplication = 22 * 2;
+int division = 21 / 7;
+int modulo = 77 % 5;
+Console.WriteLine($"Value of addition: {addition}");
+Console.WriteLine($"Value of subtraction: {subtraction}");
+Console.WriteLine($"Value of multiplication: {multiplication}");
+Console.WriteLine($"Value of division: {division}");
+Console.WriteLine($"Value of modulo: {modulo}");
+
+/* 
+                * arithmetic, compound expressions and order of operations 
+                * Multiplication and division are done first, left to right
+                * Addition and subtraction are done last, left to right
+                * Reference: https://csharpplayersguide.com/articles/operators-table
+                */
+
+int arithmetic1; // declaring the variable arithmetic1.
+arithmetic1 = 9 - 2; // assigning a value to arithmetic1, using some math.
+Console.WriteLine($"Value of arithmetic1: {arithmetic1}");
+arithmetic1 = 3 + 3; // another assignment.
+Console.WriteLine($"New value of arithmetic1: {arithmetic1}");
+int arithmetic2 = 3 + 1; // declaring arithmetic2 and assigning a value to arithmetic2 all at once.
 Console.WriteLine($"Value of arithmetic2: {arithmetic2}");
 arithmetic2 = 1 + 2; // assigning a second value to arithmetic2.
 Console.WriteLine($"New value of arithmetic2: {arithmetic2}");
